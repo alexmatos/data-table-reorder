@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <script src="jquery-1.12.4.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <script src="dataTables.rowReorder.min.js"></script>
+    <script src="Ordenar.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="rowReorder.dataTables.min.css">
+</head>
+
+<body>
+    <table id="cronogramaTable" class="table table-responsive table-bordered table-hover table-striped table-condensed bg-white dataTable no-footer"
+        role="grid">
+        <thead>
+            <tr role="row">
+           <!--     <th scope="col" rowspan="1" colspan="1">Id</th> -->
+                <th scope="col" rowspan="1" colspan="1">Etapa</th>
+                <th scope="col" rowspan="1" colspan="1">Especificação</th>
+                <th scope="col" rowspan="1" colspan="1">Quantidade</th>
+                <th scope="col" rowspan="1" colspan="1">Unidade</th>
+                <th scope="col" rowspan="1" colspan="1">Início</th>
+                <th scope="col" rowspan="1" colspan="1">Término</th>
+                <th scope="col" style="width: 80px;" rowspan="1" colspan="1">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr role="row" class="odd">
+          <!--      <td>6</td> -->
+                <td>001</td>
+                <td>nova etapa</td>
+                <td>450</td>
+                <td>jkjlç</td>
+                <td>12/2012</td>
+                <td>12/2012</td>
+                <td>
+                    <div class="btn-group">
+                        <a class="btn btn-success btn-xs btn_pencil" onclick="$(this).editarEtapa();" data-toggle="modal" data-original-title="Editar"><i class="fa fa-pencil"></i></a> <a class="btn btn-danger btn-xs" onclick="$(this).excluirEtapa();"
+                            data-toggle="modal" data-original-title="Excluir"><i class="fa fa-trash-o"></i></a> </div>
+                </td>
+            </tr>
+            <tr role="row" class="even">
+       <!--         <td>8</td> -->
+                <td>003</td>
+                <td>Etapa 3</td>
+                <td>1000</td>
+                <td>U$</td>
+                <td>01/2018</td>
+                <td>06/2018</td>
+                <td>
+                    <div class="btn-group">
+                        <a class="btn btn-success btn-xs btn_pencil" onclick="$(this).editarEtapa();" data-toggle="modal" data-original-title="Editar"><i class="fa fa-pencil"></i></a> <a class="btn btn-danger btn-xs" onclick="$(this).excluirEtapa();"
+                            data-toggle="modal" data-original-title="Excluir"><i class="fa fa-trash-o"></i></a> </div>
+                </td>
+            </tr>
+            <tr role="row" class="odd">
+        <!--        <td>13</td> -->
+                <td>004</td>
+                <td>Etapa</td>
+                <td>1000</td>
+                <td>R$</td>
+                <td>01/2000</td>
+                <td>02/2000</td>
+                <td>
+                    <a class="btn btn-success btn-xs btn_pencil" onclick="$(this).editarEtapa();" data-toggle="modal" data-original-title="Editar"><i class="fa fa-pencil"></i></a><a class="btn btn-danger btn-xs" onclick="$(this).excluirEtapa();" data-toggle="modal"
+                        data-original-title="Excluir"><i class="fa fa-trash-o"></i></a></td>
+            </tr>
+            <tr role="row" class="even selected">
+        <!--        <td>14</td> -->
+                <td>005</td>
+                <td>Mais uma</td>
+                <td>50</td>
+                <td>Peças</td>
+                <td>04/2015</td>
+                <td>05/2016</td>
+                <td>
+                    <a class="btn btn-success btn-xs btn_pencil" onclick="$(this).editarEtapa();" data-toggle="modal" data-original-title="Editar"><i class="fa fa-pencil"></i></a><a class="btn btn-danger btn-xs" onclick="$(this).excluirEtapa();" data-toggle="modal"
+                        data-original-title="Excluir"><i class="fa fa-trash-o"></i></a></td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
